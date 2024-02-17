@@ -122,6 +122,7 @@ def get_papers(limit=10):
                 {
                     "title": ".".join(pdf.split(".")[:-1]),
                     "content": content,
+                    "abstract": "",  # TODO
                     "citations": get_citations(content),
                     "hash": hash_string(content),
                 }
